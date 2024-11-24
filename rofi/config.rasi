@@ -1,1 +1,6 @@
+configuration {
+  display-combi: "";
+  font: "FiraCodeMono Nerd Font 14";
+}
+
 @theme "/usr/share/rofi/themes/Monokai.rasi"
