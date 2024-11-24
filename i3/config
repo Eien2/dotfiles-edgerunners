@@ -117,9 +117,9 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: Coding"
-set $ws2 "2: Firefox"
-set $ws3 "3: Music"
+set $ws1 "1: Coding-1"
+set $ws2 "2: Coding-2"
+set $ws3 "3: Firefox"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
@@ -153,15 +153,14 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 assign [class="kitty" instance="kitty"] $ws1
-assign [class="firefox" instance="Navigator"] $ws2
-assign [class="Spotify" instance="spotify"] $ws3
+assign [class="firefox" instance="Navigator"] $ws3
 assign [class="obs" instance="obs"] $ws7
 
 workspace $ws1 output DVI-D-0
-workspace $ws8 output DVI-D-0
-workspace $ws2 output HDMI-0
+workspace $ws2 output DVI-D-0
 workspace $ws3 output HDMI-0
 workspace $ws7 output HDMI-0
+workspace $ws8 output DVI-D-0
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -222,10 +221,9 @@ bindsym $mod+shift+x exec i3lock
 exec_always xrandr --output DVI-D-0 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --off --output None-1-1 --off
 
 # Wallpaper
-exec_always feh --bg-scale Documents/images/wallpapers/edge-runners.png 
+exec_always feh --bg-scale Documents/images/wallpapers/edgerunners-1.png 
 
 # Auto apps
-exec spotify
 exec firefox
 exec kitty
 
