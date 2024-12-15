@@ -3,11 +3,11 @@
 #
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
-#
 
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
+
 
 set $mod Mod4
 
@@ -221,7 +221,7 @@ bindsym $mod+shift+x exec i3lock
 exec_always xrandr --output DVI-D-0 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --off --output None-1-1 --off
 
 # Wallpaper
-exec_always feh --bg-scale Documents/images/wallpapers/edgerunners-1.png 
+exec_always feh --bg-scale documents/images/wallpapers/edgerunners-1.png 
 
 # Auto apps
 exec firefox
@@ -236,12 +236,12 @@ smart_gaps inverse_outer
 # Border
 for_window [class="^.*"] border pixel 2
 
-# Colors
-client.focused #4c7899 #285577 #ffffff #938967 #BFB48F
-client.focused_inactive #333333 #5f676a #ffffff #6d6345 #4f472e
-client.unfocused #333333 #222222 #888888 #6d6345 #4f472e
-client.urgent #333333 #5f676a #ffffff #6d6345 #4f472e
-client.placeholder #333333 #5f676a #ffffff #4f472e #4f472e
+# Colorsbe73c4
+client.focused #EFBEF4 #9673C4 #ffffff #EAA9F2 #EFBEF4
+client.focused_inactive #333333 #5f676a #ffffff #a683aa #a683aa
+client.unfocused #333333 #222222 #888888 #a683aa #a683aa
+client.urgent #333333 #5f676a #ffffff #a683aa #a683aa
+client.placeholder #333333 #5f676a #a683aa #a683aa #a683aa
 
 # auto start polybar
 exec_always --no-startup-id killall polybar
