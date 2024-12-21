@@ -22,7 +22,7 @@ set scrolloff 10
 set cursorpreviewfmt "\033[7;2m"
 
 #===Basic Settings===#
-set hidden false 
+set hidden true 
 set ignorecase true
 set icons true
 set preview true
@@ -106,9 +106,6 @@ map ae extract
 map az zip
 map at tar
 
-# Opening File
-map e $nvim "$f"
-
 # Basic Maps 
 map y copy
 map x cut 
@@ -116,10 +113,11 @@ map p paste
 map af mkfile
 map ad mkdir 
 map r push :rename<space>
-map Dl delete
+map DD delete
 map <enter> shell
 map ` !true
 map sr resizeimage
+map e $nvim "$f"
 map X exeprog
 
 # Movement 
@@ -127,4 +125,5 @@ map gp cd ~/documents/projects
 map gd cd ~/documents
 map gD cd ~/downloads 
 map gc cd ~/.config 
+map gC cd ~/documents/courses 
 map gi cd ~/documents/images 
