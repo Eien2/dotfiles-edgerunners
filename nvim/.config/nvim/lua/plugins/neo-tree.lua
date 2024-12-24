@@ -8,7 +8,7 @@ return {
   },
   opts = {
     filesystem = {
-      filtered_itmes = {
+      filtered_items = {
         visible = true,
       },
     },
