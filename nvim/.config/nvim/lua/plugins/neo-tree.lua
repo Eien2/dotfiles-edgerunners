@@ -5,7 +5,13 @@ return {
     "nvim-lua/plenary.nvim",
     "nvim-tree/nvim-web-devicons",
     "MunifTanjim/nui.nvim",
-    "3rd/image.nvim",
+  },
+  opts = {
+    filesystem = {
+      filtered_itmes = {
+        visible = true,
+      },
+    },
   },
   config = function()
     vim.keymap.set('n', '<C-b>', ':Neotree filesystem reveal left<CR>')
