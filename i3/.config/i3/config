@@ -230,13 +230,12 @@ exec kitty
 # Window Gaps
 gaps inner 6
 gaps outer 6
-
 smart_gaps inverse_outer
 
 # Border
 for_window [class="^.*"] border pixel 2
 
-# Colorsbe73c4
+# Colors
 client.focused #EFBEF4 #9673C4 #ffffff #EAA9F2 #EFBEF4
 client.focused_inactive #333333 #5f676a #ffffff #a683aa #a683aa
 client.unfocused #333333 #222222 #888888 #a683aa #a683aa
