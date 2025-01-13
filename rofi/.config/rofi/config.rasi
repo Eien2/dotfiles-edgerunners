@@ -1,6 +1,6 @@
 configuration {
   display-combi: "crun";
-  font: "FiraCodeMono Nerd Font 14";
+  font: "Mononoki Nerd Font Mono 14";
 }
 
 @theme "/usr/share/rofi/themes/Monokai.rasi"
