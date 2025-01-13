@@ -1,6 +1,6 @@
 configuration {
-  display-combi: "crun";
+  display-run: "execute";
   font: "Mononoki Nerd Font Mono 14";
 }
 
-@theme "/usr/share/rofi/themes/Monokai.rasi"
+@theme "/usr/share/rofi/themes/edgerunners.rasi"
