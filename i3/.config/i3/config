@@ -247,8 +247,7 @@ exec_always --no-startup-id killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # auto start picom
-exec_always --no-startup-id killall picom
-exec_always --no-startup-id pidof picom 1> /dev/null || picom --config --vsync ~/.config/picom.conf &
+exec_always --no-startup-id picom -b
 
 # auto set off floating
 for_window [class="package"] floating disable
