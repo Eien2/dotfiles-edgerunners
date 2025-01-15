@@ -162,7 +162,7 @@ workspace $ws3 output DVI-D-0
 workspace $ws4 output HDMI-0
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+# bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
@@ -220,8 +220,12 @@ bindsym $mod+shift+x exec i3lock
 # Monitors settings
 exec_always xrandr --output DVI-D-0 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --off --output None-1-1 --off
 
-# Wallpaper
+# Static Wallpaper
 exec_always feh --bg-scale documents/images/wallpapers/static/anime/cyberpunk-edgerunners/edgerunners-1.png 
+
+# Animated Wallaper
+# exec_always --no-startup-id killall back4.sh
+# exec_always --no-startup-id back4.sh auto documents/images/wallpapers/animated/anime/ttgl-1.gif &
 
 # Auto apps
 exec --no-startup-id firefox
