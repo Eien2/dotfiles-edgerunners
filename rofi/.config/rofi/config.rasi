@@ -3,4 +3,4 @@ configuration {
   font: "Mononoki Nerd Font Mono 14";
 }
 
-@theme "/usr/share/rofi/themes/edgerunners.rasi"
+@theme "/home/sebastian/.config/rofi/edgerunners.rasi"
