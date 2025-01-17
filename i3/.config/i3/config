@@ -119,9 +119,9 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 " Editor"
 set $ws2 "󰈹 Browser"
-set $ws3 " General"
-set $ws4 " Recording"
-set $ws5 "5"
+set $ws3 " Music"
+set $ws4 " General"
+set $ws5 " Recording"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -133,7 +133,7 @@ bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
 bindsym $mod+4 workspace $ws4
-bindsym $mod+5 workspace number $ws5
+bindsym $mod+5 workspace $ws5
 bindsym $mod+6 workspace number $ws6
 bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
@@ -145,7 +145,7 @@ bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2 
 bindsym $mod+Shift+3 move container to workspace $ws3
 bindsym $mod+Shift+4 move container to workspace $ws4
-bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+5 move container to workspace $ws5
 bindsym $mod+Shift+6 move container to workspace number $ws6
 bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
@@ -154,12 +154,14 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 assign [class="kitty" instance="kitty"] $ws1
 assign [class="firefox" instance="Navigator"] $ws2
-assign [class="obs" instance="obs"] $ws4
+assign [class="obs" instance="obs"] $ws5
+assign [class="Spotify" instance="spotify"] $ws3
 
 workspace $ws1 output DVI-D-0
 workspace $ws2 output HDMI-0
-workspace $ws3 output DVI-D-0
-workspace $ws4 output HDMI-0
+workspace $ws3 output HDMI-0
+workspace $ws4 output DVI-D-0
+workspace $ws5 output HDMI-0
 
 # reload the configuration file
 # bindsym $mod+Shift+c reload
@@ -230,6 +232,7 @@ exec_always feh --bg-scale documents/images/wallpapers/static/anime/cyberpunk-ed
 # Auto apps
 exec --no-startup-id firefox
 exec --no-startup-id kitty
+exec --no-startup-id spotfiy 
 
 # Window Gaps
 gaps inner 16
