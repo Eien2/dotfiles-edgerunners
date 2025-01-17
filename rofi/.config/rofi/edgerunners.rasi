@@ -1,12 +1,14 @@
 /**
- * ROFI edgerunners theme 
+ * ROFI: edgerunners-theme 
  * User: Eien 
- */
+*/
 
 * {
-    selected-normal-foreground:  rgba ( 248, 248, 242, 100 % );
-    foreground:                  rgba ( 248, 248, 242, 100 % );
-    normal-foreground:           @foreground;
+    // selected-normal-foreground:  rgb ( 221, 205, 188 );
+    // foreground:                  rgb ( 188, 172, 155 );
+    selected-normal-foreground:  rgb ( 209, 207, 129 );
+    foreground:                  rgb( 147, 146, 88 );
+    normal-foreground:           rgb ( 216, 147, 215 );
     alternate-normal-background: rgba ( 39, 40, 34, 0 % );
     red:                         rgba ( 220, 50, 47, 100 % );
     selected-urgent-foreground:  rgba ( 248, 248, 242, 100 % );
@@ -17,7 +19,7 @@
     lightbg:                     rgba ( 238, 232, 213, 100 % );
     selected-active-foreground:  rgba ( 166, 226, 42, 100 % );
     alternate-active-background: rgba ( 39, 40, 34, 0 % );
-    background:                  rgba ( 39, 40, 34, 93 % );
+    background:                  rgba ( 48, 46, 44, 100 % );
     bordercolor:                 rgba ( 0, 43, 54, 100 % );
     alternate-normal-foreground: @foreground;
     normal-background:           rgba ( 39, 40, 34, 0 % );
@@ -25,7 +27,7 @@
     selected-normal-background:  rgba ( 20, 20, 17, 100 % );
     border-color:                @foreground;
     spacing:                     2;
-    separatorcolor:              rgba ( 230, 219, 116, 100 % );
+    separatorcolor:              rgb ( 149, 147, 217, 100 % );
     urgent-background:           rgba ( 39, 40, 34, 0 % );
     selected-urgent-background:  rgba ( 249, 38, 114, 100 % );
     alternate-urgent-foreground: @urgent-foreground;
@@ -36,28 +38,24 @@
 }
 window {
     background-color: @background;
-    border:           1;
-    padding:          5;
+    border:           0;
+    padding:          24;
 }
 mainbox {
     border:  0;
     padding: 0;
 }
 message {
-    border:       2px 0px 0px ;
-    border-color: @separatorcolor;
-    padding:      1px ;
+    padding: 4px ;
 }
 textbox {
     text-color: @foreground;
 }
 listview {
     fixed-height: 0;
-    border:       2px 0px 0px ;
-    border-color: @separatorcolor;
-    spacing:      2px ;
-    scrollbar:    true;
-    padding:      2px 0px 0px ;
+    spacing:  2px;
+    scrollbar: true;
+    padding: 2px 0px 0px;
 }
 element {
     border:  0;
@@ -69,7 +67,7 @@ element-text {
 }
 element.normal.normal {
     background-color: @normal-background;
-    text-color:       @normal-foreground;
+    text-color:       @foreground;
 }
 element.normal.urgent {
     background-color: @urgent-background;
@@ -120,7 +118,6 @@ button.selected {
 inputbar {
     spacing:    0;
     text-color: @normal-foreground;
-    padding:    1px ;
 }
 case-indicator {
     spacing:    0;
