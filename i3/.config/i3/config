@@ -156,6 +156,7 @@ assign [class="kitty" instance="kitty"] $ws1
 assign [class="firefox" instance="Navigator"] $ws2
 assign [class="obs" instance="obs"] $ws5
 assign [class="Spotify" instance="spotify"] $ws3
+assign [class="org.vinegarhq.Sober" instance="sober"] $ws4
 
 workspace $ws1 output DVI-D-0
 workspace $ws2 output HDMI-0
@@ -224,10 +225,6 @@ exec_always xrandr --output DVI-D-0 --primary --mode 1920x1080 --pos 1920x0 --ro
 
 # Static Wallpaper
 exec_always feh --bg-scale documents/images/wallpapers/static/anime/cyberpunk-edgerunners/edgerunners-1.png 
-
-# Animated Wallaper
-# exec_always --no-startup-id killall back4.sh
-# exec_always --no-startup-id back4.sh auto documents/images/wallpapers/animated/anime/ttgl-1.gif &
 
 # Auto apps
 exec --no-startup-id firefox

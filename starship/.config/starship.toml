@@ -6,21 +6,22 @@ $git_branch\
 $git_state\
 $git_status\
 $cmd_duration\
+$time\
 $line_break\
 $python\
 $character"""
 
 [directory]
-style = "blue"
+style = "yellow"
 
 [character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+success_symbol = "[󱞩](cyan)"
+error_symbol = "[󱞩](red)"
+vimcmd_symbol = "[󱞥](green)"
 
 [git_branch]
 format = "[$branch]($style)"
-style = "bright-black"
+style = "blue"
 
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
@@ -40,6 +41,12 @@ style = "bright-black"
 [cmd_duration]
 format = "[$duration]($style) "
 style = "yellow"
+
+[time]
+disabled = false
+format  = "[- $time ]($style)"
+time_format = "%T"
+style = "bright-black"
 
 [python]
 format = "[$virtualenv]($style) "
