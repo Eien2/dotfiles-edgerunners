@@ -5,7 +5,6 @@ $directory\
 $git_branch\
 $git_state\
 $git_status\
-$cmd_duration\
 $time\
 $line_break\
 $python\
@@ -37,10 +36,6 @@ stashed = "≡"
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
 style = "bright-black"
-
-[cmd_duration]
-format = "[$duration]($style) "
-style = "yellow"
 
 [time]
 disabled = false
